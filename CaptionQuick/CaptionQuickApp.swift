@@ -11,7 +11,7 @@ import SwiftUI
 struct CaptionQuickApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingLogo()
         }
     }
 }

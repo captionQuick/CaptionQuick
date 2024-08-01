@@ -1,28 +1,28 @@
 [
     {
-        "image": "image1",
-        "title": "Title 1",
-        "description": "Description 1"
+        "image": "notion-digital-journaling",
+        "title": "Craft Captions",
+        "description": "Generate engaging captions for any social media platform in over 50 languages."
     },
     {
-        "image": "image2",
-        "title": "Title 2",
-        "description": "Description 2"
+        "image": "notion-working-with-computer-content-creator",
+        "title": "Plan Posts",
+        "description": "Schedule your captions in advance and keep track of posting dates easily."
     },
     {
-        "image": "image3",
-        "title": "Title 3",
-        "description": "Description 3"
+        "image": "notion-using-computer-in-the-cafe-content-creator",
+        "title": "Save & Review",
+        "description": "Access your history of used and upcoming captions anytime, anywhere."
     },
     {
-        "image": "image4",
-        "title": "Title 4",
-        "description": "Description 4"
+        "image": "notion-explaining-content-creator",
+        "title": "Customize Your Tone",
+        "description": "Set the tone of your captions to match your brand’s voice and mood."
     },
     {
-        "image": "image5",
-        "title": "Title 5",
-        "description": "Description 5"
+        "image": "notion-using-computer-2",
+        "title": "Trend with Hashtags",
+        "description": "Boost visibility with SEO-driven hashtags tailored for your content."
     }
     
 ]
