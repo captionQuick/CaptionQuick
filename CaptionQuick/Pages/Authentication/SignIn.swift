@@ -1,22 +1,17 @@
-//
-//  SignIn.swift
-//  CaptionQuick
-//
-//  Created by Peyman Osatian on 2024-08-01.
-//
-
 import SwiftUI
 
 struct SignIn: View {
     @State private var email: String = ""
+    @State private var showError: Bool = false
+
     var body: some View {
-        NavigationView  {
-            ZStack{
+        NavigationView {
+            ZStack {
                 Color("BackgroundColorMain")
                     .edgesIgnoringSafeArea(.all)
                 VStack(alignment: .leading) {
                     HStack {
-                        VStack(alignment: .leading){
+                        VStack(alignment: .leading) {
                             Text("What's your")
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
@@ -49,62 +44,82 @@ struct SignIn: View {
                             .background(Color.clear) // Transparent background
                             .overlay(
                                 RoundedRectangle(cornerRadius: 44)
-                                    .stroke(Color.gray, lineWidth: 0.2)
+                                    .stroke(showError ? Color.red : Color.gray, lineWidth: 0.2)
                             )
                             .padding(.horizontal, 42)
-                        Text("Or SignUp with")
+                            .padding(.top, 32)
+                       
+                        if showError {
+                            Text("You should enter a correct email address.")
+                                .foregroundColor(.red)
+                                .padding(.horizontal, 42)
+                        }
+
+                        Button(action: {
+                            if isValidEmail(email) {
+                                showError = false
+                                // Navigate to SignInPassword
+                            } else {
+                                showError = true
+                            }
+                        }) {
+                            Text("CONTINUE WITH EMAIL")
+                                .fontWeight(.medium)
+                                .font(.system(size: 14))
+                                .frame(height: 16)
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(44)
+                        }
+                        .padding(.horizontal, 42)
+                        .padding(.top, 16)
+                        
+                        Text("Or SignIn with")
                             .font(.system(size: 12))
                             .foregroundColor(.white)
-                            .padding(.bottom,16)
-                            .padding(.top,16)
+                            .padding(.bottom, 16)
+                            .padding(.top, 16)
+                        
                         HStack(spacing: 16) {
-                                       Image("Google")
-                                           .resizable()
-                                           .frame(width: 32, height:32)
-                                           .foregroundColor(.blue)
-                                           .padding(.horizontal,8)
+                            Image("Google")
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .foregroundColor(.blue)
                             Image("Facebook")
-                                           .resizable()
-                                           .frame(width: 32, height: 32)
-                                           .foregroundColor(.blue)
-                                   }
-                       
-                            .padding(.horizontal, 42)
-                            .padding(.bottom, 24)
-                        Button(action: {
-                                           // Action for create account button
-                                       }) {
-                                           Text("CREATE ACCOUNT")
-                                               .fontWeight(.medium)
-                                               .font(.system(size: 14))
-                                               .frame(height: 16)
-                                               .frame(maxWidth: .infinity)
-                                               .padding()
-                                               .background(Color.blue)
-                                               .foregroundColor(.white)
-                                               .cornerRadius(44)
-                                       }
-                                       .padding(.horizontal, 42)
-                     
-                        NavigationLink(destination: SignIn()) {
-                                               Text("Already have an account")
-                                                   .font(.system(size: 12))
-                                                   .fontWeight(.light)
-                                                   .foregroundColor(.white)
-                                                   .underline()
-                                                   .padding(.top, 8)
-                                                   .frame(maxWidth: .infinity, alignment: .center)
-                                           }
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .foregroundColor(.blue)
+                        }
+                        .padding(.horizontal, 42)
+                        .padding(.bottom, 8)
+                        
+                        NavigationLink(destination: SignUp()) {
+                            Text("Don't have an account?")
+                                .font(.system(size: 12))
+                                .fontWeight(.light)
+                                .foregroundColor(.white)
+                                .underline()
+                                .padding(.top, 8)
+                                .frame(maxWidth: .infinity, alignment: .center)
+                        }
                         Spacer()
-                                     
-                    } // ZSTACK
+                    } // VStack
                 }
             }
-            
         }
         .navigationBarHidden(true)
     }
+
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
 }
+
 #Preview {
     SignIn()
 }
+

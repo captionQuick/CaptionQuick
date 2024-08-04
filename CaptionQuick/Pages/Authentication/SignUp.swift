@@ -67,7 +67,7 @@ struct SignUp: View {
                                            .resizable()
                                            .frame(width: 32, height:32)
                                            .foregroundColor(.blue)
-                                           .padding(.horizontal,8)
+                                          
                             Image("Facebook")
                                            .resizable()
                                            .frame(width: 32, height: 32)

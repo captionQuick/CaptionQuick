@@ -13,6 +13,10 @@
 		1E64B0D62C470BAB0032DE52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E64B0D52C470BAB0032DE52 /* Preview Assets.xcassets */; };
 		7205AC0E2C49DB8700120885 /* OnboardingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7205AC0D2C49DB8700120885 /* OnboardingSlider.swift */; };
 		72111D312C4B27A500324297 /* InnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72111D302C4B27A500324297 /* InnerShadow.swift */; };
+		722C2C412C5C01AB00C9928A /* SignInPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C2C402C5C01AB00C9928A /* SignInPassword.swift */; };
+		722C2C432C5D75CD00C9928A /* ForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C2C422C5D75CD00C9928A /* ForgetPassword.swift */; };
+		722C2C452C5D794000C9928A /* ForgetPasswordVerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C2C442C5D794000C9928A /* ForgetPasswordVerificationCode.swift */; };
+		722C2C472C5D795400C9928A /* NewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C2C462C5D795400C9928A /* NewPassword.swift */; };
 		72402EB02C485BB000AD1BCD /* OnboardingLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72402EAF2C485BB000AD1BCD /* OnboardingLogo.swift */; };
 		725EC2B22C4D98B400FBF99E /* SliderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725EC2B12C4D98B400FBF99E /* SliderItem.swift */; };
 		725EC2B42C4D9A0A00FBF99E /* SliderData.json in Resources */ = {isa = PBXBuildFile; fileRef = 725EC2B32C4D9A0A00FBF99E /* SliderData.json */; };
@@ -31,6 +35,10 @@
 		1E64B0D52C470BAB0032DE52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7205AC0D2C49DB8700120885 /* OnboardingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlider.swift; sourceTree = "<group>"; };
 		72111D302C4B27A500324297 /* InnerShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadow.swift; sourceTree = "<group>"; };
+		722C2C402C5C01AB00C9928A /* SignInPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPassword.swift; sourceTree = "<group>"; };
+		722C2C422C5D75CD00C9928A /* ForgetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassword.swift; sourceTree = "<group>"; };
+		722C2C442C5D794000C9928A /* ForgetPasswordVerificationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVerificationCode.swift; sourceTree = "<group>"; };
+		722C2C462C5D795400C9928A /* NewPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPassword.swift; sourceTree = "<group>"; };
 		72402EAF2C485BB000AD1BCD /* OnboardingLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLogo.swift; sourceTree = "<group>"; };
 		725EC2B12C4D98B400FBF99E /* SliderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderItem.swift; sourceTree = "<group>"; };
 		725EC2B32C4D9A0A00FBF99E /* SliderData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SliderData.json; sourceTree = "<group>"; };
@@ -165,6 +173,10 @@
 			children = (
 				727C81A92C4DC9C600211240 /* SignUp.swift */,
 				727BAA8F2C5AF8C2005C3E13 /* SignIn.swift */,
+				722C2C402C5C01AB00C9928A /* SignInPassword.swift */,
+				722C2C422C5D75CD00C9928A /* ForgetPassword.swift */,
+				722C2C442C5D794000C9928A /* ForgetPasswordVerificationCode.swift */,
+				722C2C462C5D795400C9928A /* NewPassword.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -245,11 +257,15 @@
 				725EC2B22C4D98B400FBF99E /* SliderItem.swift in Sources */,
 				727BAA902C5AF8C2005C3E13 /* SignIn.swift in Sources */,
 				1E64B0D12C470BAA0032DE52 /* ContentView.swift in Sources */,
+				722C2C432C5D75CD00C9928A /* ForgetPassword.swift in Sources */,
 				727BAA8E2C5AE53D005C3E13 /* CustomTextField.swift in Sources */,
+				722C2C472C5D795400C9928A /* NewPassword.swift in Sources */,
 				1E64B0CF2C470BAA0032DE52 /* CaptionQuickApp.swift in Sources */,
 				726A3A872C48654500452CAD /* OnboardingAfterLogo.swift in Sources */,
 				7205AC0E2C49DB8700120885 /* OnboardingSlider.swift in Sources */,
 				727C81AA2C4DC9C600211240 /* SignUp.swift in Sources */,
+				722C2C452C5D794000C9928A /* ForgetPasswordVerificationCode.swift in Sources */,
+				722C2C412C5C01AB00C9928A /* SignInPassword.swift in Sources */,
 				72402EB02C485BB000AD1BCD /* OnboardingLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
