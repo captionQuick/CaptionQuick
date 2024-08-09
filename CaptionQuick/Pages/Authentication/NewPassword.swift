@@ -17,23 +17,8 @@ struct NewPassword: View {
             VStack(alignment: .leading) {
                 HStack {
                     VStack(alignment: .leading){
-                        Text("New Password")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .padding(.leading, 42)
-                        
-                        Text("Enter your new password")
-                            .font(.subheadline)
-                            .foregroundColor(.white)
-                            .padding(.leading, 42)
+                       AuthHeaderView(title: "New Password", subtitle: "Enter your new password")
                     }
-                    Spacer()
-                    Image("Subtrack")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 120, height: 120)
-                        .padding(.trailing, -35)
                 }
                 .padding(.top, 85)
                 Spacer()

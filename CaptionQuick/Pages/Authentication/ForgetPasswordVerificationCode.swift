@@ -19,23 +19,8 @@ struct ForgetPasswordVerificationCode: View {
             VStack(alignment: .leading) {
                 HStack {
                     VStack(alignment: .leading){
-                        Text("Verification")
-                            .font(.system(size: 32))
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .padding(.leading, 42)
-                        Text("Enter verification code here.")
-                            .font(.system(size: 14))
-                            .fontWeight(.medium)
-                            .foregroundColor(.white)
-                            .padding(.leading, 42)
+                        AuthHeaderView(title: "Verification", subtitle: "Enter verifivation code here.")
                     }
-                    Spacer()
-                    Image("Subtrack")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 120, height: 120)
-                        .padding(.trailing, -35)
                 }
                 .padding(.top, 85)
                 Spacer()

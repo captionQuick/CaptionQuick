@@ -22,6 +22,8 @@
 		725EC2B42C4D9A0A00FBF99E /* SliderData.json in Resources */ = {isa = PBXBuildFile; fileRef = 725EC2B32C4D9A0A00FBF99E /* SliderData.json */; };
 		725EC2B62C4D9BA100FBF99E /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725EC2B52C4D9BA100FBF99E /* SliderView.swift */; };
 		726A3A872C48654500452CAD /* OnboardingAfterLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A3A862C48654500452CAD /* OnboardingAfterLogo.swift */; };
+		727AE7D72C65894300497890 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AE7D62C65894300497890 /* AuthHeaderView.swift */; };
+		727AE7D92C658F7D00497890 /* SocialMediaIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AE7D82C658F7D00497890 /* SocialMediaIcons.swift */; };
 		727BAA8E2C5AE53D005C3E13 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BAA8D2C5AE53D005C3E13 /* CustomTextField.swift */; };
 		727BAA902C5AF8C2005C3E13 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BAA8F2C5AF8C2005C3E13 /* SignIn.swift */; };
 		727C81AA2C4DC9C600211240 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727C81A92C4DC9C600211240 /* SignUp.swift */; };
@@ -44,6 +46,8 @@
 		725EC2B32C4D9A0A00FBF99E /* SliderData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SliderData.json; sourceTree = "<group>"; };
 		725EC2B52C4D9BA100FBF99E /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		726A3A862C48654500452CAD /* OnboardingAfterLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAfterLogo.swift; sourceTree = "<group>"; };
+		727AE7D62C65894300497890 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		727AE7D82C658F7D00497890 /* SocialMediaIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaIcons.swift; sourceTree = "<group>"; };
 		727BAA8D2C5AE53D005C3E13 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		727BAA8F2C5AF8C2005C3E13 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		727C81A92C4DC9C600211240 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		72402EA72C485A5400AD1BCD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				727AE7D52C65890E00497890 /* AuthenticationComponents */,
 				727BAA8D2C5AE53D005C3E13 /* CustomTextField.swift */,
 			);
 			path = Components;
@@ -156,6 +161,15 @@
 				725EC2B12C4D98B400FBF99E /* SliderItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		727AE7D52C65890E00497890 /* AuthenticationComponents */ = {
+			isa = PBXGroup;
+			children = (
+				727AE7D62C65894300497890 /* AuthHeaderView.swift */,
+				727AE7D82C658F7D00497890 /* SocialMediaIcons.swift */,
+			);
+			path = AuthenticationComponents;
 			sourceTree = "<group>";
 		};
 		72B944DF2C5300C500FDEDC2 /* Onboarding */ = {
@@ -257,7 +271,9 @@
 				725EC2B22C4D98B400FBF99E /* SliderItem.swift in Sources */,
 				727BAA902C5AF8C2005C3E13 /* SignIn.swift in Sources */,
 				1E64B0D12C470BAA0032DE52 /* ContentView.swift in Sources */,
+				727AE7D72C65894300497890 /* AuthHeaderView.swift in Sources */,
 				722C2C432C5D75CD00C9928A /* ForgetPassword.swift in Sources */,
+				727AE7D92C658F7D00497890 /* SocialMediaIcons.swift in Sources */,
 				727BAA8E2C5AE53D005C3E13 /* CustomTextField.swift in Sources */,
 				722C2C472C5D795400C9928A /* NewPassword.swift in Sources */,
 				1E64B0CF2C470BAA0032DE52 /* CaptionQuickApp.swift in Sources */,

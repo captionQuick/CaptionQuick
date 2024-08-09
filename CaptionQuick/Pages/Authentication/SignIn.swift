@@ -82,18 +82,7 @@ struct SignIn: View {
                             .padding(.bottom, 16)
                             .padding(.top, 16)
                         
-                        HStack(spacing: 16) {
-                            Image("Google")
-                                .resizable()
-                                .frame(width: 32, height: 32)
-                                .foregroundColor(.blue)
-                            Image("Facebook")
-                                .resizable()
-                                .frame(width: 32, height: 32)
-                                .foregroundColor(.blue)
-                        }
-                        .padding(.horizontal, 42)
-                        .padding(.bottom, 8)
+                       SocialMediaIcons()
                         
                         NavigationLink(destination: SignUp()) {
                             Text("Don't have an account?")

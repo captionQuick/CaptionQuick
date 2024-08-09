@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct AuthHeaderView: View {
+    var title : String
+    var subtitle : String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+                  VStack(alignment: .leading) {
+                      Text(title)
+                          .font(.largeTitle)
+                          .fontWeight(.bold)
+                          .foregroundColor(.white)
+                          .padding(.leading, 42)
+                      Text(subtitle)
+                          .font(.subheadline)
+                          .foregroundColor(.white)
+                          .padding(.leading, 42)
+                  }
+                  Spacer()
+                  Image("Subtrack")
+                      .resizable()
+                      .scaledToFit()
+                      .frame(width: 120, height: 120)
+                      .padding(.trailing, -35)
+              }
     }
 }
 
 #Preview {
-    AuthHeaderView()
+    AuthHeaderView(title: "Sign Up", subtitle: "Welcome to Caption Qucik")
 }
