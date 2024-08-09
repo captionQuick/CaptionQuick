@@ -51,8 +51,10 @@ struct SignIn: View {
                        
                         if showError {
                             Text("You should enter a correct email address.")
+                                .font(.system(size: 13))
+                                .padding(.leading,-42)
                                 .foregroundColor(.red)
-                                .padding(.horizontal, 42)
+                                
                         }
 
                         Button(action: {
