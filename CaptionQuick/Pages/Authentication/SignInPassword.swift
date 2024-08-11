@@ -13,31 +13,34 @@ struct SignInPassword: View {
                 VStack(alignment: .leading) {
                     HStack {
                         VStack(alignment: .leading){
+                            // TOP HEADER TITLE
                             Text("Password")
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                                 .padding(.leading, 42)
                             Text("Using ... To Login")
-                            // in this part of text we need to users email address in between dots
+                            // 👉🏻 in this part of text we need to users email address in between dots\\\\\\
                                 .font(.footnote)
                                 .fontWeight(.medium)
                                 .foregroundColor(.white)
                                 .padding(.leading, 42)
                                 .padding(.top,-3)
-                        }
+                        } // VSTACK
                         Spacer()
+                        // SIDE IMAGE
                         Image("Subtrack")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 120, height: 120)
                             .padding(.trailing, -35)
-                    }
+                    } // HSTACK
                     .padding(.top, 85)
                     Spacer()
                     
-                    // HERE IS THE PASSWORD INPUT FILED WHICH WE NEED TP SHOW THE PASSWORD WRONG BY WRITING WRONGLY THAT NEED TO CONNECT TO DATABASE
+                    // 👉🏻  HERE IS THE PASSWORD INPUT FILED WHICH WE NEED TO SHOW THE PASSWORD WRONG BY WRITING WRONGLY THAT NEED TO CONNECT TO DATABASE
                     VStack(spacing: 16) {
+                        // HERE WE NEED TO SHOW PASSWORD IS WRONG ERROR 404
                         ZStack {
                             if isPasswordVisible {
                                 TextField("", text: $password)
@@ -59,6 +62,7 @@ struct SignInPassword: View {
                             }
                             HStack {
                                 Spacer()
+                                // 👉🏻  HERE WE NEED HANDLE LOGIN REQUEST
                                 Button(action: {
                                     isPasswordVisible.toggle()
                                 }) {
@@ -85,7 +89,7 @@ struct SignInPassword: View {
                                 .foregroundColor(.blue)
                                 .frame(maxWidth: .infinity, alignment:.trailing)
                                 .padding(.horizontal, 42)
-                        }
+                        } // NAVIGATION LINK
                     
                         NavigationLink(destination: SignInPassword()) {
                             Text("LOGIN")
@@ -97,10 +101,10 @@ struct SignInPassword: View {
                                 .background(Color.blue)
                                 .foregroundColor(.white)
                                 .cornerRadius(44)
-                        }
+                        } // NAVIGATION LINK
                         .padding(.horizontal, 42)
                         .padding(.top,16)
-
+                         // SOCIAL MEDIA AND GOOGLE LOGIN
                         Text("Or SignIn with")
                             .font(.system(size: 14))
                             .foregroundColor(.white)
@@ -120,9 +124,9 @@ struct SignInPassword: View {
                         }
                         Spacer()
                     } // VStack
-                }
-            }
-        }
+                } // VSTACK
+            } // ZSTACK
+        } // NAVIGATION VIEW
         .navigationBarHidden(true)
     }
 }

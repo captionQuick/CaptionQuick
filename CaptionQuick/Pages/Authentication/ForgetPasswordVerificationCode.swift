@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ForgetPasswordVerificationCode: View {
+    // MAYBE WE WILL INTEGER INSTEAD OF STRING IN HERE
     @State private var code1: String = ""
     @State private var code2: String = ""
     @State private var code3: String = ""
@@ -20,8 +21,8 @@ struct ForgetPasswordVerificationCode: View {
                 HStack {
                     VStack(alignment: .leading){
                         AuthHeaderView(title: "Verification", subtitle: "Enter verifivation code here.")
-                    }
-                }
+                    } // VSTACK
+                } // HSTACK
                 .padding(.top, 85)
                 Spacer()
                 VStack(alignment: .leading, spacing: 16) {
@@ -54,7 +55,7 @@ struct ForgetPasswordVerificationCode: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.gray, lineWidth: 0.2)
                             )
-                    }
+                    } // HSTACK
                     .padding(.horizontal, 42)
                     
                     HStack {
@@ -64,7 +65,7 @@ struct ForgetPasswordVerificationCode: View {
                             .padding(.leading, 42)
                             .foregroundColor(.gray)
                             .padding(.bottom, 72)
-                        // here we will have text link which will generate a verification code again 
+                        //  👉🏻here we will have text link which will generate a verification code again
                         Text("Resend")
                             .font(.system(size: 12))
                             .fontWeight(.light)
@@ -73,7 +74,7 @@ struct ForgetPasswordVerificationCode: View {
                             .foregroundColor(.red)
                     }
                     Button(action: {
-                        // Action for create account button
+                        //  👉🏻Action for CONFIRM VERIFICATION CODE
                     }) {
                         Text("SEND")
                             .fontWeight(.medium)
@@ -88,9 +89,9 @@ struct ForgetPasswordVerificationCode: View {
                     .padding(.horizontal, 42)
                     Spacer()
                     
-                }
-            }
-        }
+                } // VSTACK
+            } // vstack
+        } // zstack
     }
 }
 

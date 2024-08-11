@@ -16,10 +16,11 @@ struct NewPassword: View {
                     VStack(alignment: .leading){
                         AuthHeaderView(title: "New Password", subtitle: "Enter your new password")
                     }
-                }
+                } // HSTACK
                 .padding(.top, 85)
                 Spacer()
                 VStack(spacing: 16) {
+                    // PASSWORD VALIDATION VISIBILITY
                     ZStack(alignment: .leading) {
                         if password.isEmpty {
                             Text("Enter new password")
@@ -95,7 +96,7 @@ struct NewPassword: View {
                     .padding(.horizontal, 42)
 
                     Button(action: {
-                        // Action for save button
+                        //👉🏻 Action for save button
                     }) {
                         Text("SAVE")
                             .fontWeight(.medium)
@@ -111,9 +112,9 @@ struct NewPassword: View {
                     .padding(.top, 32)
                     
                     Spacer()
-                }
-            }
-        }
+                } // VSTACK
+            } // VSTACK
+        } // ZSTACK
     }
 }
 
