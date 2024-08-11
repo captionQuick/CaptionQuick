@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SocialMediaIcons: View {
     var body: some View {
+        // The icons should connect to signin process of login with Google & Facebook
         HStack(spacing: 32) {
                        Image("Google")
                            .resizable()

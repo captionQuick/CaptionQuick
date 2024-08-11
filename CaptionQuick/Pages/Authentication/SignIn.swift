@@ -79,7 +79,7 @@ struct SignIn: View {
                         .padding(.top, 16)
                         
                         Text("Or SignIn with")
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                             .foregroundColor(.white)
                             .padding(.bottom, 16)
                             .padding(.top, 16)
@@ -88,7 +88,7 @@ struct SignIn: View {
                         
                         NavigationLink(destination: SignUp()) {
                             Text("Don't have an account?")
-                                .font(.system(size: 12))
+                                .font(.system(size: 14))
                                 .fontWeight(.light)
                                 .foregroundColor(.white)
                                 .underline()
